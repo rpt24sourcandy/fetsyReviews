@@ -1,9 +1,8 @@
 const { Sequelize } = require('sequelize');
+const itemsData = require('./itemsSeed');
+const reviewsData = require('./reviewsSeed');
 
 const db = require('./database');
-
-db.query('DROP TABLE IF EXISTS ITEMS');
-db.query('DROP TABLE IF EXISTS REVIEWS');
 
 var Item = db.define('Item', {
 	id: { type: Sequelize.INTEGER, autoIncrement: true, primaryKey: true },
@@ -17,53 +16,50 @@ var Review = db.define('Review', {
 	rating: { type: Sequelize.INTEGER, min: 0, max: 5 },
 	review_content: Sequelize.STRING,
 	image_url: Sequelize.STRING,
+	item_option: Sequelize.STRING,
 });
 
 Item.hasMany(Review);
 Review.belongsTo(Item);
 
-Item.sync();
-Review.sync();
+db.query('SET FOREIGN_KEY_CHECKS = 0')
+	.then(function () {
+		return db.sync({ force: true });
+	})
+	.then(function () {
+		return db.query('SET FOREIGN_KEY_CHECKS = 1');
+	})
+	.then(
+		function () {
+			const addItem = (name) => {
+				Item.findOrCreate({ where: { item_name: name } });
+			};
+			itemsData.forEach((item) => {
+				addItem(item.item_name);
+			});
 
-const itemsData = [
-	{
-		item_name: 'Wine RANDOM Face Mask with clear and red rhinestones',
-	},
-	{
-		item_name: 'washable Face Mask covering with glitter rose gold glitter Custom made, Designer FaceMask, with NO pocket for filter, mask holder lanyard',
-	},
-	{
-		item_name: 'Hanging with my Gnomies face mask made of clear, green and red rhinestones',
-	},
-	{
-		item_name: 'FaceMask mask holder lanyard, washable Face Mask covering with glitter rose gold glitter Custom made, Designer with NO pocket for filter',
-	},
-	{
-		item_name: 'Face Shield with Flippable Face Shield - PPE - Comfortable Elastic Head Band - Full Cover Safety Cover',
-	},
-	{
-		item_name: 'Winter Soldier type of PPE covid -19 mask',
-	},
-	{
-		item_name: 'Halloween Collection, Holiday, Covid PPE, Fall, Thanksgiving, Scrub cap, surgical cap, nurse, doctor, dentist, men, women, buttons,',
-	},
-	{
-		item_name: 'HStar Wars Collection, Mandalorian, Covid PPE, Yoda, The Child, Scrub cap, surgical cap, nurse, doctor, dentist, men, women, buttons,',
-	},
-	{
-		item_name: 'FTP Face Mask Covering Reusable | Hype Beast Hip-Hop Rap Street Wear SuicideBoys Travis Scott Cactus Jack COVID PPE Designer Brand',
-	},
-	{
-		item_name: 'Dry-Fit Moisture-Wicking Adult Face Masks',
-	},
-];
-
-const addItem = (name) => {
-	Item.findOrCreate({ where: { item_name: name } });
-};
-itemsData.forEach((item) => {
-	addItem(item.item_name);
-});
+			const addReview = (name, date, rating, content, imgurl, itemId, option) => {
+				Review.findOrCreate({
+					where: {
+						customer_name: name,
+						date_of_review: date,
+						rating: rating,
+						review_content: content,
+						image_url: imgurl,
+						ItemId: itemId,
+						item_option: option,
+					},
+				});
+			};
+			reviewsData.forEach((review) => {
+				addReview(review.customer_name, review.date_of_review, review.rating, review.review_content, review.image_url, review.ItemId, review.item_option);
+			});
+			console.log('Database synchronised.');
+		},
+		function (err) {
+			console.log(err);
+		}
+	);
 
 exports.Item = Item;
 exports.Review = Review;
