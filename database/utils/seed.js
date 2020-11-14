@@ -19,6 +19,8 @@ var Review = db.define('Review', {
 Review.belongsTo(Item);
 Item.hasMany(Review);
 
+Item.findOrCreate({ where: { item_name: 'Wine RANDOM Face Mask with clear and red rhinestones' } });
+
 Item.sync({ force: true });
 Review.sync({ force: true });
 
