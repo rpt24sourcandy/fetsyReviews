@@ -5,7 +5,7 @@ const controller = {
     get: (req, res) => {
       Review.findAll({
         where: {
-          ItemId: req.params.id,
+          ItemId: req.params.itemId,
         },
       })
         .then((items) => {

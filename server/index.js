@@ -8,7 +8,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static('client/dist'));
 
-app.get('/api/reviews/:id', (req, res) => {
+app.get('/api/items/:itemId/reviews', (req, res) => {
   controller.reviews.get(req, res);
 });
 
