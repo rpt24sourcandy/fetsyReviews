@@ -21,9 +21,14 @@ describe('get reviews', () => {
 
     axios.get.mockImplementationOnce(() => Promise.resolve(data));
     await expect(getReviews(2)).resolves.toEqual(data);
+    axios.get.mockRestore();
   });
 
-  // it('fetches erroneously data from an API', async () => {
+  it('fetches erroneously data from an API', async () => {
+    const errorMessage = 'Some Error';
 
-  // });
+    axios.get.mockImplementationOnce(() => Promise.reject(new Error(errorMessage)));
+
+    await expect(getReviews()).resolves.toThrow(errorMessage);
+  });
 });
