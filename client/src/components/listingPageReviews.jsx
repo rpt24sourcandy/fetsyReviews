@@ -1,5 +1,6 @@
 import React from 'react';
 import TotalReview from './totalReview.jsx';
+import DataReviews from './dataReviews.jsx';
 
 class ListingPageReviews extends React.Component {
 	constructor(props) {
@@ -9,13 +10,7 @@ class ListingPageReviews extends React.Component {
 		return (
 			<div>
 				<TotalReview reviews={this.props.reviews} />
-				<ul>
-					{this.props.reviews.length > 0
-						? this.props.reviews.map((review) => {
-								return <li>{review.customer_name}</li>;
-						  })
-						: ''}
-				</ul>
+				<DataReviews reviews={this.props.reviews} />
 			</div>
 		);
 	}

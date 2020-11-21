@@ -20,8 +20,15 @@ class Main extends React.Component {
 	}
 
 	getCurrentURL() {
-		const URL = window.location;
-		console.log(URL);
+		const parsedURL = new URL(window.location.href);
+		let urlPath = parsedURL.pathname.split('/');
+		console.log(urlPath[2]);
+		this.setState(
+			{
+				itemId: Number(urlPath[2]),
+			},
+			() => this.getReviews(this.state.itemId)
+		);
 	}
 
 	getReviews(itemId) {
@@ -41,7 +48,7 @@ class Main extends React.Component {
 		console.log(this.state.reviews);
 		return (
 			<div>
-				Main Component
+				Main Component {this.state.itemId}
 				<ListingPageReviews reviews={this.state.reviews} />
 				<CustomerPhotos reviews={this.state.reviews} />
 			</div>
