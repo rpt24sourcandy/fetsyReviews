@@ -1,4 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Main from './components/main.jsx';
 
-ReactDOM.render(<h1>RENDER ME</h1>, document.getElementById('root'));
+ReactDOM.render(<Main />, document.getElementById('root'));
