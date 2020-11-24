@@ -22,7 +22,6 @@ class Main extends React.Component {
 	getCurrentURL() {
 		const parsedURL = new URL(window.location.href);
 		let urlPath = parsedURL.pathname.split('/');
-		console.log(urlPath[2]);
 		this.setState(
 			{
 				itemId: Number(urlPath[2]),
@@ -45,7 +44,7 @@ class Main extends React.Component {
 	}
 
 	render() {
-		console.log(this.state.reviews);
+		// console.log(this.state.reviews);
 		return (
 			<div>
 				Main Component {this.state.itemId}

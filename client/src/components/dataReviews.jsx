@@ -13,7 +13,7 @@ class DataReviews extends React.Component {
 				<div>
 					{this.props.reviews.length > 0
 						? this.props.reviews.map((review) => {
-								return <SingleReview review={review} />;
+								return <SingleReview review={review} key={review.id} />;
 						  })
 						: ''}
 				</div>

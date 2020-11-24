@@ -7,13 +7,11 @@ class CustomerPhotos extends React.Component {
 	render() {
 		return (
 			<div>
-				<ul>
-					{this.props.reviews.length > 0
-						? this.props.reviews.map((review) => {
-								return <img src={review.image_url}></img>;
-						  })
-						: ''}
-				</ul>
+				{this.props.reviews.length > 0
+					? this.props.reviews.map((review) => {
+							return <img src={review.image_url} key={review.id}></img>;
+					  })
+					: ''}
 			</div>
 		);
 	}

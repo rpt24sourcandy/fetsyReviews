@@ -1,0 +1,403 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component snapshot renders correctly inital layout customer photos renders 1`] = `
+<div>
+  <img
+    src="https://source.unsplash.com/random/200x200"
+  />
+  <img
+    src="https://source.unsplash.com/random/200x200"
+  />
+  <img
+    src="https://source.unsplash.com/random/200x200"
+  />
+  <img
+    src="https://source.unsplash.com/random/200x200"
+  />
+  <img
+    src="https://source.unsplash.com/random/200x200"
+  />
+  <img
+    src="https://source.unsplash.com/random/200x200"
+  />
+</div>
+`;
+
+exports[`Component snapshot renders correctly inital layout data reviews renders 1`] = `
+<div>
+  <div>
+    Reviews for this item 
+    6
+     
+    <br />
+    Review for this shop 1,088
+    <div>
+      Sort by: Recommended
+    </div>
+  </div>
+  <div>
+    <div
+      style={
+        Object {
+          "border": "2px solid black",
+        }
+      }
+    >
+      Kazza
+       
+      <br />
+      Nov 11, 2020
+       
+      <br />
+      5
+       star 
+      <br />
+      Mask color: 
+      Christmas tree+bow
+       
+      <br />
+      Speedy delivery Item nice Recommend
+       
+      <br />
+    </div>
+    <div
+      style={
+        Object {
+          "border": "2px solid black",
+        }
+      }
+    >
+      Angela Naylor
+       
+      <br />
+      Oct 21, 2020
+       
+      <br />
+      5
+       star 
+      <br />
+      Mask color: 
+      Christmas tree+bow
+       
+      <br />
+      Absolutely beautiful will definitely be purchasing some more . Delivery time outstanding so quick thank you so much xx 💜
+       
+      <br />
+    </div>
+    <div
+      style={
+        Object {
+          "border": "2px solid black",
+        }
+      }
+    >
+      ruthiebaby1619
+       
+      <br />
+      Nov 9, 2020
+       
+      <br />
+      5
+       star 
+      <br />
+      Mask color: 
+      Christmas tree+bow
+       
+      <br />
+      This mask is fabulous! Glitter design at both sides. Very comfortable. Can't wait till December to wear it!
+       
+      <br />
+    </div>
+    <div
+      style={
+        Object {
+          "border": "2px solid black",
+        }
+      }
+    >
+      Kazza
+       
+      <br />
+      Nov 11, 2020
+       
+      <br />
+      5
+       star 
+      <br />
+      Mask color: 
+      Christmas tree+bow
+       
+      <br />
+      Speedy delivery Item nice Recommend
+       
+      <br />
+    </div>
+    <div
+      style={
+        Object {
+          "border": "2px solid black",
+        }
+      }
+    >
+      Angela Naylor
+       
+      <br />
+      Oct 21, 2020
+       
+      <br />
+      5
+       star 
+      <br />
+      Mask color: 
+      Christmas tree+bow
+       
+      <br />
+      Absolutely beautiful will definitely be purchasing some more . Delivery time outstanding so quick thank you so much xx 💜
+       
+      <br />
+    </div>
+    <div
+      style={
+        Object {
+          "border": "2px solid black",
+        }
+      }
+    >
+      ruthiebaby1619
+       
+      <br />
+      Nov 9, 2020
+       
+      <br />
+      5
+       star 
+      <br />
+      Mask color: 
+      Christmas tree+bow
+       
+      <br />
+      This mask is fabulous! Glitter design at both sides. Very comfortable. Can't wait till December to wear it!
+       
+      <br />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Component snapshot renders correctly inital layout listing page reviews renders 1`] = `
+<div>
+  <div>
+    6
+     reviews 
+    5
+     rating stars
+  </div>
+  <div>
+    <div>
+      Reviews for this item 
+      6
+       
+      <br />
+      Review for this shop 1,088
+      <div>
+        Sort by: Recommended
+      </div>
+    </div>
+    <div>
+      <div
+        style={
+          Object {
+            "border": "2px solid black",
+          }
+        }
+      >
+        Kazza
+         
+        <br />
+        Nov 11, 2020
+         
+        <br />
+        5
+         star 
+        <br />
+        Mask color: 
+        Christmas tree+bow
+         
+        <br />
+        Speedy delivery Item nice Recommend
+         
+        <br />
+      </div>
+      <div
+        style={
+          Object {
+            "border": "2px solid black",
+          }
+        }
+      >
+        Angela Naylor
+         
+        <br />
+        Oct 21, 2020
+         
+        <br />
+        5
+         star 
+        <br />
+        Mask color: 
+        Christmas tree+bow
+         
+        <br />
+        Absolutely beautiful will definitely be purchasing some more . Delivery time outstanding so quick thank you so much xx 💜
+         
+        <br />
+      </div>
+      <div
+        style={
+          Object {
+            "border": "2px solid black",
+          }
+        }
+      >
+        ruthiebaby1619
+         
+        <br />
+        Nov 9, 2020
+         
+        <br />
+        5
+         star 
+        <br />
+        Mask color: 
+        Christmas tree+bow
+         
+        <br />
+        This mask is fabulous! Glitter design at both sides. Very comfortable. Can't wait till December to wear it!
+         
+        <br />
+      </div>
+      <div
+        style={
+          Object {
+            "border": "2px solid black",
+          }
+        }
+      >
+        Kazza
+         
+        <br />
+        Nov 11, 2020
+         
+        <br />
+        5
+         star 
+        <br />
+        Mask color: 
+        Christmas tree+bow
+         
+        <br />
+        Speedy delivery Item nice Recommend
+         
+        <br />
+      </div>
+      <div
+        style={
+          Object {
+            "border": "2px solid black",
+          }
+        }
+      >
+        Angela Naylor
+         
+        <br />
+        Oct 21, 2020
+         
+        <br />
+        5
+         star 
+        <br />
+        Mask color: 
+        Christmas tree+bow
+         
+        <br />
+        Absolutely beautiful will definitely be purchasing some more . Delivery time outstanding so quick thank you so much xx 💜
+         
+        <br />
+      </div>
+      <div
+        style={
+          Object {
+            "border": "2px solid black",
+          }
+        }
+      >
+        ruthiebaby1619
+         
+        <br />
+        Nov 9, 2020
+         
+        <br />
+        5
+         star 
+        <br />
+        Mask color: 
+        Christmas tree+bow
+         
+        <br />
+        This mask is fabulous! Glitter design at both sides. Very comfortable. Can't wait till December to wear it!
+         
+        <br />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Component snapshot renders correctly inital layout reviews nav renders 1`] = `
+<div>
+  Reviews for this item 
+  6
+   
+  <br />
+  Review for this shop 1,088
+  <div>
+    Sort by: Recommended
+  </div>
+</div>
+`;
+
+exports[`Component snapshot renders correctly inital layout single review renders 1`] = `
+<div
+  style={
+    Object {
+      "border": "2px solid black",
+    }
+  }
+>
+  Kazza
+   
+  <br />
+  Nov 11, 2020
+   
+  <br />
+  5
+   star 
+  <br />
+  Mask color: 
+  Christmas tree+bow
+   
+  <br />
+  Speedy delivery Item nice Recommend
+   
+  <br />
+</div>
+`;
+
+exports[`Component snapshot renders correctly inital layout total review renders 1`] = `
+<div>
+  6
+   reviews 
+  5
+   rating stars
+</div>
+`;
