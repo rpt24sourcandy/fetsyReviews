@@ -1,4 +1,5 @@
 import React from 'react';
+import { Rating } from 'semantic-ui-react';
 
 class TotalReview extends React.Component {
 	constructor(props) {
@@ -11,7 +12,10 @@ class TotalReview extends React.Component {
 		}
 		return (
 			<div>
-				{this.props.reviews.length} reviews {ratingSum / this.props.reviews.length} rating stars
+				<Rating icon="star" defaultRating={3} maxRating={5} />
+				<div>
+					{this.props.reviews.length} reviews {ratingSum / this.props.reviews.length} rating stars
+				</div>
 			</div>
 		);
 	}
