@@ -12,5 +12,5 @@
 .ui.star.rating i.active.icon {
 	background: 0 0 !important;
 	color: black !important;
-	text-shadow: 0 -1px 0 black, -1px 0 0 black, 0 0px 0 black, 1px 0 0 black !important;
+	text-shadow: 0 0px 0 black, 0px 0 0 black, 0 0px 0 black, 1px 0 0 black !important;
 }
