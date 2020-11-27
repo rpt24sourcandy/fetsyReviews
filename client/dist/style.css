@@ -2,3 +2,15 @@
 	height: 200px;
 	width: 200 px;
 }
+.total-reviews {
+	font-size: 26px;
+	line-height: 42px;
+	font-family: 'Arvo', serif;
+	font-weight: 300;
+	letter-spacing: 0.35px;
+}
+.ui.star.rating i.active.icon {
+	background: 0 0 !important;
+	color: black !important;
+	text-shadow: 0 -1px 0 black, -1px 0 0 black, 0 0px 0 black, 1px 0 0 black !important;
+}
