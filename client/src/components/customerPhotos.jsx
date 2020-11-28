@@ -1,4 +1,6 @@
 import React from 'react';
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
 
 class CustomerPhotos extends React.Component {
 	constructor(props) {
@@ -6,13 +8,19 @@ class CustomerPhotos extends React.Component {
 	}
 	render() {
 		return (
-			<div>
-				{this.props.reviews.length > 0
-					? this.props.reviews.map((review) => {
-							return <img src={review.image_url} key={review.id} className="customer-photo"></img>;
-					  })
-					: ''}
-			</div>
+			<Carousel>
+				<div>
+					{this.props.reviews.length > 0
+						? this.props.reviews.map((review) => {
+								return (
+									<div>
+										<img src={review.image_url} key={review.id} className="customer-photo" />
+									</div>
+								);
+						  })
+						: ''}
+				</div>
+			</Carousel>
 		);
 	}
 }
