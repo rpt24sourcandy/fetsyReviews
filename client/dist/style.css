@@ -1,6 +1,7 @@
 .customer-photo {
 	height: 200px;
-	width: 200 px;
+	width: 200px;
+	border-radius: 10px;
 }
 .total-reviews {
 	font-size: 26px;
@@ -19,4 +20,9 @@
 	margin-left: auto;
 	margin-right: 0;
 	width: 40%;
+}
+#photos-from-reviews {
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 28px;
 }
