@@ -44,11 +44,11 @@ class Main extends React.Component {
 	}
 
 	render() {
-		// console.log(this.state.reviews);
+		console.log(this.state.reviews);
 		return (
 			<div>
-				Main Component {this.state.itemId}
 				<ListingPageReviews reviews={this.state.reviews} />
+				<p id="photos-from-reviews">Photos from reviews</p>
 				<CustomerPhotos reviews={this.state.reviews} />
 			</div>
 		);
