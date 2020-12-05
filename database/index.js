@@ -1,5 +1,12 @@
 const { Sequelize } = require('sequelize');
 
+const sequelize = new Sequelize('', 'root', 'password', {
+  host: 'localhost',
+  dialect: 'mysql',
+});
+
+sequelize.query('CREATE DATABASE IF NOT EXISTS REVIEWS');
+
 const db = new Sequelize('REVIEWS', 'root', 'password', {
   host: 'localhost',
   dialect: 'mysql',
