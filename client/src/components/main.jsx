@@ -48,7 +48,9 @@ class Main extends React.Component {
 		return (
 			<div>
 				<ListingPageReviews reviews={this.state.reviews} />
-				<p id="photos-from-reviews">Photos from reviews</p>
+				<p id="photos-from-reviews" style={{ fontSize: '16px', paddingTop: '20px' }}>
+					Photos from reviews
+				</p>
 				<CustomerPhotos reviews={this.state.reviews} />
 			</div>
 		);

@@ -8,20 +8,24 @@ class SingleReview extends React.Component {
 	render() {
 		let image = `https://source.unsplash.com/collection/4389261/${Math.random() * 36}`;
 		return (
-			<Feed.Event>
+			<Feed.Event style={{ paddingTop: '30px' }}>
 				<Feed.Label>
-					<img src={image} />
+					<img src={image} style={{ borderRadius: '100%', height: '35px', width: '35px' }} />
 				</Feed.Label>
 				<Feed.Content>
 					<Feed.Summary>
-						<Feed.User>
-							<a>{this.props.review.customer_name}</a>
+						<Feed.User style={{ paddingBottom: '15px' }}>
+							<a style={{ color: 'gray', textDecoration: 'underline', transition: 'opacity 200ms ease-out' }}>{this.props.review.customer_name}</a>
 						</Feed.User>
 						<Feed.Date>{this.props.review.date_of_review}</Feed.Date>
 					</Feed.Summary>
-					<Rating icon="star" rating={this.props.review.rating} defaultRating={3} maxRating={5} size="huge" disabled />
-					<Feed.Extra text>Mask color: {this.props.review.item_option}</Feed.Extra>
-					<Feed.Extra text>{this.props.review.review_content}</Feed.Extra>
+					<Rating rating={this.props.review.rating} defaultRating={3} maxRating={5} size="huge" disabled />
+					<Feed.Extra text>
+						<b>Mask color: </b> {this.props.review.item_option}
+					</Feed.Extra>
+					<Feed.Extra text style={{ fontSize: '16px' }}>
+						{this.props.review.review_content}
+					</Feed.Extra>
 				</Feed.Content>
 			</Feed.Event>
 		);
