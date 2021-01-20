@@ -42,7 +42,7 @@ npm run react-dev
 Start the server (on port 3002)
 
 ```
-npm run start
+npm start
 ```
 
 ## Testing
