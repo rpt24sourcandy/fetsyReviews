@@ -6,10 +6,10 @@ const reviewsData = [
 		date_of_review: 'Oct 31, 2020',
 		rating: 5,
 		review_content: '',
-		image_url: `https://source.unsplash.com/collection/10019140/${faker.random.number({
-			min: 1,
-			max: 17,
-		})}`,
+		image_url: `https://fec-etsy-reviews.s3-us-west-1.amazonaws.com/Masks${faker.random.number({
+			min: 0,
+			max: 9,
+		})}.jpg`,
 		ItemId: 1,
 		item_option: 'Hot Pink',
 	},
@@ -18,10 +18,10 @@ const reviewsData = [
 		date_of_review: 'Nov 11, 2020',
 		rating: 5,
 		review_content: '',
-		image_url: `https://source.unsplash.com/collection/10019140/${faker.random.number({
-			min: 1,
-			max: 17,
-		})}`,
+		image_url: `https://fec-etsy-reviews.s3-us-west-1.amazonaws.com/Masks${faker.random.number({
+			min: 0,
+			max: 9,
+		})}.jpg`,
 		ItemId: 1,
 		item_option: 'Black',
 	},
@@ -30,10 +30,10 @@ const reviewsData = [
 		date_of_review: 'Nov 10, 2020',
 		rating: 5,
 		review_content: 'Really love this mask in black! I received a lot of compliments. It was delivered on time .',
-		image_url: `https://source.unsplash.com/collection/10019140/${faker.random.number({
-			min: 1,
-			max: 17,
-		})}`,
+		image_url: `https://fec-etsy-reviews.s3-us-west-1.amazonaws.com/Masks${faker.random.number({
+			min: 0,
+			max: 9,
+		})}.jpg`,
 		ItemId: 1,
 		item_option: 'Black',
 	},
@@ -42,10 +42,10 @@ const reviewsData = [
 		date_of_review: 'Nov 3, 2020',
 		rating: 3,
 		review_content: 'NEEDS TO BE LONGER SO IT COMPLETELY COVERS CHIN',
-		image_url: `https://source.unsplash.com/collection/10019140/${faker.random.number({
-			min: 1,
-			max: 17,
-		})}`,
+		image_url: `https://fec-etsy-reviews.s3-us-west-1.amazonaws.com/Masks${faker.random.number({
+			min: 0,
+			max: 9,
+		})}.jpg`,
 		ItemId: 1,
 		item_option: 'Black',
 	},
@@ -54,10 +54,10 @@ const reviewsData = [
 		date_of_review: 'Nov 11, 2020',
 		rating: 5,
 		review_content: 'Speedy delivery Item nice Recommend',
-		image_url: `https://source.unsplash.com/collection/10019140/${faker.random.number({
-			min: 1,
-			max: 17,
-		})}`,
+		image_url: `https://fec-etsy-reviews.s3-us-west-1.amazonaws.com/Masks${faker.random.number({
+			min: 0,
+			max: 9,
+		})}.jpg`,
 		ItemId: 2,
 		item_option: 'Christmas tree+bow',
 	},
@@ -66,10 +66,10 @@ const reviewsData = [
 		date_of_review: 'Oct 21, 2020',
 		rating: 5,
 		review_content: 'Absolutely beautiful will definitely be purchasing some more . Delivery time outstanding so quick thank you so much xx 💜',
-		image_url: `https://source.unsplash.com/collection/10019140/${faker.random.number({
-			min: 1,
-			max: 17,
-		})}`,
+		image_url: `https://fec-etsy-reviews.s3-us-west-1.amazonaws.com/Masks${faker.random.number({
+			min: 0,
+			max: 9,
+		})}.jpg`,
 		ItemId: 2,
 		item_option: 'Christmas tree+bow',
 	},
@@ -78,10 +78,10 @@ const reviewsData = [
 		date_of_review: 'Nov 9, 2020',
 		rating: 5,
 		review_content: "This mask is fabulous! Glitter design at both sides. Very comfortable. Can't wait till December to wear it!",
-		image_url: `https://source.unsplash.com/collection/10019140/${faker.random.number({
-			min: 1,
-			max: 17,
-		})}`,
+		image_url: `https://fec-etsy-reviews.s3-us-west-1.amazonaws.com/Masks${faker.random.number({
+			min: 0,
+			max: 9,
+		})}.jpg`,
 		ItemId: 2,
 		item_option: 'Christmas tree+bow',
 	},
@@ -90,10 +90,10 @@ const reviewsData = [
 		date_of_review: 'Oct 20, 2020',
 		rating: 5,
 		review_content: 'Very comfortable and breathable without being right up against my mouth',
-		image_url: `https://source.unsplash.com/collection/10019140/${faker.random.number({
-			min: 1,
-			max: 17,
-		})}`,
+		image_url: `https://fec-etsy-reviews.s3-us-west-1.amazonaws.com/Masks${faker.random.number({
+			min: 0,
+			max: 9,
+		})}.jpg`,
 		ItemId: 2,
 		item_option: '06. grey rose bows',
 	},
@@ -119,10 +119,10 @@ const addFakeReview = () => {
 		date_of_review: date,
 		rating,
 		review_content: content,
-		image_url: `https://source.unsplash.com/collection/10019140/${faker.random.number({
-			min: 1,
-			max: 17,
-		})}`,
+		image_url: `https://fec-etsy-reviews.s3-us-west-1.amazonaws.com/Masks${faker.random.number({
+			min: 0,
+			max: 9,
+		})}.jpg`,
 		ItemId: itemId,
 		item_option: options,
 	};

@@ -24,7 +24,7 @@ npm install
 
 To run on a local machine, start mySQL service and in database/index.js on line 3 and line 10 update root user and password that matches your local machine mySQL.
 
-For mySQL EC2 instance, a new credential and user name may need to be created with all admin rights for set up and database seeding to work properly.
+For mySQL EC2 instance, a new credential and user name may need to be created with all admin rights for set up and database seeding to work properly. Need to update client/src/main.jsx axios get request path on line 35 to EC2 instance IP address.
 
 To seed the database
 
